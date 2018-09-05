@@ -1,0 +1,185 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\usepackage{parcolumns}
+\usepackage{lipsum}
+\usepackage{kantlipsum}
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{5.1in} % set width of text portion
+%\usepackage[margin=0.25in]{geometry}
+
+
+%   \addtolength{\oddsidemargin}{-0.55in}
+  \addtolength{\oddsidemargin}{-0.7in}
+%   \addtolength{\evensidemargin}{-.6in}
+%   \addtolength{\evensidemargin}{-0.6in}
+  \addtolength{\textwidth}{1.5in}
+
+  % \addtolength{\topmargin}{-.5in}
+  \addtolength{\topmargin}{-0.5in}
+
+  \addtolength{\textheight}{1.75in}
+
+\begin{document}
+\begin{resume}
+
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Cody Morterud}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width 575pt height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{ % CodyMorterud@gmail.com $\cdot$
+  cmorteru@umich.edu $\cdot$ (248) 481-0355}%\textbullet \space(248) 481-0355
+% \moveleft.5\hoffset\centerline{}
+ \moveleft.5\hoffset\centerline{784 Hidden Creek Drive
+ $\cdot$ South Lyon, MI 48178}%\textbullet \space Ann Arbor, MI 48105}
+% \moveleft.5\hoffset\centerline{\url{https://cmorterud.github.io}}
+
+\section{EDUCATION} \textbf{University of Michigan, Ann Arbor, MI}  \hfill September 2016 - April 2019 \\
+                 {\sl Bachelor of Science in Engineering,} Computer Science \\
+                 {\sl Minor in Mathematics}\\
+                 {\sl Admitted to Engineering Honors Program}\\
+                 3.44/4.00 GPA \\
+                 Relevant Coursework: Introduction to Operating Systems, Algorithms \& Data Structures,
+                  Web Systems\\
+                 %Current Coursework: Algorithms \& Data Structures, Foundations of Computer Science, \\
+                 %Money \& Banking. \\
+                 \\
+                \textbf{Washtenaw Community College, Ann Arbor, MI} \hfill August 2015 -  July 2016 \\
+                % Engineering Transfer \\
+                4.00/4.00 GPA
+                % Relevant Coursework: Object-Oriented Programming with C\texttt{++},
+                % \\Introduction to Programming with C\texttt{++}, \\ Differential Equations, Linear Algebra.\\
+
+
+
+\section{EXPERIENCE}
+                \textbf{Quicken Loans, Detroit, MI} \hfill May 2018 - August 2018 \\
+                {\sl Software Developer Intern}
+                \begin{itemize}  \itemsep -2pt %reduce space between items
+
+                  \item Implemented, presented, demoed, and won People's Choice
+                   award with a team of interns \\for brand new internal intern
+                   networking platform in the cloud to
+                   address market research for an intern
+                   networking and connection service using
+                   AWS Lambda, S3, Cloudfront and API Gateway.
+
+                  \item Developed, tested, and published
+                  company-wide Nuget package to add
+                  necessary functionality to InRule
+                  to allow QA Engineers to completely automate test suites.
+
+                  \item Developed with .NET Core and .NET Framework
+                  for applications currently in in production.
+
+                  \item Wrote unit tests with NUnit and MOQ to ensure high code coverage
+                  to meet quality gates before continouous deployment
+                   to environments.
+
+                  \item Set up build templates to build,
+                  test, apply secrets, conduct code analysis,
+                  and check quality gates before release to meet
+                  continouous integration standards.
+
+                  \item Assisted in development in domain
+                  specific language to meet business requirements for applications.
+
+                  \item Devised Splunk dashboard with use of
+                  custom queries to provide
+                   visibility into DynamoDB for business users.
+
+                  \item Added application-level
+                  metrics logging to services via InfluxDB to identify bottlenecks,
+                  and set up Grafana dashboards to visually view the metrics.
+
+                  \item Set up email alerting for production errors and high latency
+                  for services to ensure service level agreements are met.
+
+                  \item Participated in Agile framework ceremonies and 
+                  scrums to track story progress
+
+                \end{itemize}
+
+                \textbf{Boyle Lab, Ann Arbor, MI}
+                \hfill October 2016 - May 2018 \\
+                {\sl Research Assistant}
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 %\item Assisted
+                 %\item Bioinformatics algorithm currently used by Boyle Lab to assist in genetic
+                %  disease research is \\ time-intensive in current implementation, requiring approximately two weeks given input data.
+                 \item Translated bioinformatics algorithm used by Boyle Lab to assist in research from Perl to C\texttt{++} \\for a
+                    speed-up in data processing time as well as making specified optimizations.
+                 %\item Running current implementation is time-intensive, approximately 2 weeks.
+                 \item Collaborated with a partner as to decisions for the C\texttt{++} development of the algorithm for efficiency.
+                 \item Integrated third-party programs and source codes into project to satisfy design requirements.
+                %  \item Use Standard Template Library containers and algorithms on a large project, as well as version control systems for productivity
+                 \item Used Standard Template Library containers and algorithms on a large project, 
+                 and version control systems.
+                \end{itemize}
+
+
+ \section{PROJECT \\ EXPERIENCE}
+    \textbf{Operating Systems} \hfill January 2018 - April 2018 \\
+    {\sl Student}% C\texttt{++}
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item Designed asynchronous, network file system with user and request
+            validation for CRUD operations to study file system implementation
+            and socket programming.
+            \item Developed single-level pager for a simulated system to efficiently
+            allocate virtual pages to memory
+            and reduce page faults and learn about memory management unit implementation.
+            \item Implemented thread library to gain familiarity with concurrent
+            programming utilities such as threads, mutexes, and condition variables.
+      
+    \end{itemize}
+
+     %  \textbf{Web Systems} \hfill September 2017 - December 2017 \\
+                %   {\sl Student}% C\texttt{++}
+                %   \begin{itemize}  \itemsep -2pt %reduce space between items
+                %     \item Designed Instagram clone with basic functionality to gain familiarity with the Flask \\
+                %     framework, developing web pages via templating, and database construction with SQLite.
+                %     \item Developed MapReduce master and worker server system with REST API interface \\to perform parallel MapReduce jobs
+                %     and gain experience programming asynchronously.
+                %     \item Devised Wikipedia search engine with use of Hadoop to construct an inverted index\\
+                %     to calculate cosine similarity scores to facilitate user search queries \\along with input from pre-calculated PageRank scores.
+                %   \end{itemize}
+
+
+                  % \textbf{Algorithms and Data Structures} \hfill January 2017 - April 2017 \\
+                  % {\sl Student}% C\texttt{++}
+                %  \begin{itemize}  \itemsep -2pt %reduce space between items
+                %  \item Developed path-finding dictionary program to emphasize program efficiency\\ along with design of test cases to expose bugs.
+                %  \item Designed mine escape program to implement and test templated variations of
+                % the priority queue, including a independent implementation of a pairing priority queue.
+                %  \item Devised command line SQL-style system to learn appropriate data structure choices for a
+                % given problem, as well as evaluation of runtime and storage tradeoffs for different data structures.
+                %  \item Implemented graph algorithms to understand branch and bound algorithms,
+                % incorporating fast and effective bounding algorithms and exploration of heuristic approaches.
+                %  \end{itemize}
+
+\section{COMPUTER \\ SKILLS}
+
+\noindent
+
+    \begin{parcolumns}[rulebetween,colwidths={1=3cm}]{4}    
+        \colchunk[1]{\textbf{Languages}\\C/C\texttt{++}\\Python\\C\texttt{\#} .NET\\LaTeX}
+        \colchunk[2]{\textbf{IDE}\\Visual Studio\\Visual Studio Code\\VIM\\Xcode}
+        \colchunk[3]{\textbf{Technologies}\\Git\\Bash\\Splunk\\Grafana\\Nuget}
+        \colchunk[4]{\\TFS\\AWS Lambda\\AWS API Gateway\\Flask\\Perf}
+    \end{parcolumns}
+
+% \section{ADDITIONAL}
+
+% I have basic proficiency in the German language, and I am trying to learn the Indonesian language in my freetime.
+
+
+\end{resume}
+\end{document}
+
+
+
+
