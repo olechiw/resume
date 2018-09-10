@@ -1,7 +1,7 @@
 
-default: f18resume.pdf
+default: resume.pdf
 
-%resume.pdf: %resume.tex
+resume.pdf: resume.tex
 	pdflatex $<
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls
