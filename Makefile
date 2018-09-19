@@ -1,8 +1,8 @@
 
-default: CodyMorterudResume.pdf
+default: CodyMorterudResume
 
-CodyMorterudResume.pdf: resume.tex
-	pdflatex $<
+CodyMorterudResume: resume.tex
+	pdflatex --jobname=$@ $<
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls *sync*
 
