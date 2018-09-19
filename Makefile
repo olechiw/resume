@@ -1,7 +1,7 @@
 
-default: resume.pdf
+default: CodyMorterudResume.pdf
 
-resume.pdf: resume.tex
+CodyMorterudResume.pdf: resume.tex
 	pdflatex $<
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls *sync*
