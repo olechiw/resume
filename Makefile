@@ -2,7 +2,7 @@
 default: CodyMorterudResume
 
 CodyMorterudResume: resume.tex
-	pdflatex --jobname=$@ $< > /dev/null
+	pdflatex --jobname=$@ $< 
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls *sync*
 
