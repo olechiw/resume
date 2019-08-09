@@ -1,7 +1,7 @@
 
-CodyMorterudResume: resume.tex
+JakobOlechiwResume: resume.tex
 	pdflatex --jobname=$@ $< 
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls *sync*
 
-.PHONY: default clean CodyMorterudResume
+.PHONY: default clean JakobOlechiwResume 
