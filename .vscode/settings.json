@@ -1,0 +1,22 @@
+{
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.command": {
+        "command": "C:\\sumatrapdf\\SumatraPDF.exe",
+        "args": [
+            "-reuse-instance",
+            "-inverse-search",
+            "\"C:\\Users\\jakob\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\jakob\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -g \"%f:%l\"",
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.synctex": {
+      "command": "C:\\sumatrapdf\\SumatraPDF.exe",
+      "args": [
+        "-reuse-instance",
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "%PDF%"
+      ]
+    }
+  }

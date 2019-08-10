@@ -1,6 +1,6 @@
 
-JakobOlechiwResume: resume.tex
-	pdflatex --jobname=$@ $< 
+JakobOlechiwResume: JakobOlechiwResume.tex
+	pdflatex JakobOlechiwResume 
 clean:
 	rm -f *.aux *.dvi *.pdf *fdb* *.log *.fls *sync*
 
