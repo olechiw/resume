@@ -10,11 +10,11 @@
 \addtolength{\sectionwidth}{-0.2in}
 \addtolength{\sectionskip}{-0.05in}
 
-
+\usepackage{CormorantGaramond}
+\usepackage{charter}
 
 \begin{document}
 \begin{resume}
-
 
     % Center the name over the entire width of resume:
     \moveleft.5\hoffset\centerline{\Large\bf Jakob Olechiw}
@@ -30,75 +30,83 @@
     }
     
     \section{EDUCATION}
+    
     \textbf{University of Michigan, Ann Arbor, MI}
     \hfill April 2023\\
-    {\sl Bachelor of Science} Computer Science \hfill 3.93/4.0 GPA\\
-    Relevant Coursework: Data Structures and Algorithms, Programming and Intro Data Structures, Discrete Math
-
+    {\sl Bachelor of Science} Computer Science \hfill 3.67/4.0 GPA\\
+    Relevant Coursework: Data Structures and Algorithms, Foundations of Computer Science
+    
     \section{EXPERIENCE}
+    \textbf{Morningstar Inc., Chicago, IL}
+    \hfill June 2021 - August 2021 \\
+    {\sl Software Engineer Intern}
+    
+    \textbf{Intrepid Control Systems, Troy, MI}
+    \hfill January 2021 - May 2021 \\
+    {\sl Web Development Intern}
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item Proposed and architected new routes web for services using NodeJS, Express and Typescript 
+        \item Implemented unit and integration testing solutions using Mocha.
+        \item Planned, secured, and delivered service for management of Docker containers in a scalable environment.
+        \item Created prototypes for dynamic in-browser editor in React and Typescript.
+        \item Planned and completed full stack deliverables to contribute to company milestones
+              
+    \end{itemize}
+    
     \textbf{TechSmith Corporation, Okemos, MI}
-    \hfill May 2020 - Present \\
+    \hfill May 2020 - December 2020 \\
     {\sl Software Engineer Intern}
     \begin{itemize}  \itemsep -2pt %reduce space between items
         \item Worked as a full stack developer on a Scaled Agile team to assist in design, implementation, and maintenance of \\
-        enterprise cloud products. Participated in Scrum standups, SAfe planning meetings, code review, paired \\
-        programming, and other collaborative processes.
+              enterprise cloud products. 
         \item Developed modern frontend applications in Typescript/React, added new responsive mobile navigation to products, and maintained existing legacy frontend codebases in AngularJS
-        \item Engineered application backends in C\texttt{\#} using .NET Core. Proposed, architected, and tested new additions to REST APIs, 
-        including HTTP integration tests and unit tests utilizing dependency injection patterns. 
-        Created new functionality in backend page rendering with Razor markup.
-        \item Designed an internal dashboard using Typescript/React and C\texttt{\#} .NET, 
-        interacting with TechSmith's entitlements API to provide trials to products for use by QA and Software engineers.
-        \item Configured and deployed Azure service applications using Github and Azure Devops Continous Integration. Utilized Azure Service Bus messaging queues in new application features.
-        \item Worked with Azure Table Storage and SQL in .NET Core, facilitated database migrations with Entity Framework. 
-        \item Created authorization strategies and requirements to establish trust between .NET Web Services.
+        \item Engineered application backends in C\texttt{\#} with .NET Core. Proposed, architected, and tested new additions to REST APIs,
+              including integration tests and unit tests utilizing dependency injection patterns.
+        \item Delivered an internal dashboard project, interacting with TechSmith's APIs for use by QA and Software engineers.
+        \item Configured and deployed Azure service applications using Github and Azure Devops. 
+        \item Designed new database schemas and facilitated database migrations with Entity Framework.
+        \item Created authorization strategies and requirements to establish trust between web services.
     \end{itemize}
-
+    
     \textbf{Blue Heron Pond AFC, South Lyon, MI}
     \hfill July 2019 - May 2020 \\
     {\sl Independent Web Contractor}
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Solely responsible for the creation of an Adult Foster Care search engine.
-              Developed backend using PHP and Wordpress REST API, and a responsive, mobile-friendly frontend using Bootstrap, JQuery, and Javascript/HTML/CSS.
-        \item Consolidated State Government licensing REST APIs into MySql with scripts in Python and custom PHP dashboard.
-        \item Designed interactive and cross-platform map of Michigan Counties rendered as SVG and styled with CSS.
-        \item Architected and wrote REST APIs as backend of website in PHP, querying MySql, joining necessary tables together, or executing fulltext searches to serve search results. Developed frontend search interface with lazy loading in JS
-        \item Administered Amazon Web Services Linux EC2 instance and RDS, worked through SSH to deploy website.
+        \item Responsible for the creation of an Adult Foster Care search engine. 
+        \item Developed Wordpress backend and responsive, mobile-friendly frontend.
+        \item Administered Amazon Web Services server and database, worked through SSH to deploy website.
+        \item Consolidated State Government licensing data into SQL database with automated scripts and a custom dashboard.
+        \item Designed interactive and cross-platform map of Michigan for site navigation.
+        \item Architected and implemented REST APIs as backend of website in PHP. 
+        \item Developed frontend search interface with lazy loading in JS
     \end{itemize}
     
     \textbf{CAEN Web Team, Ann Arbor, MI}
     \hfill June 2019 - May 2020 \\
     {\sl Web Applications Developer}
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Designed and debugged unit and integration tests for Flask applications using Capybara and Selenium.
-        \item Proposed, tested, and implemented new features for web applications in Flask, using a full stack including Python backend with Jinja2 templating engine, and Javascript/HTML frontend.
-        \item Facilitated migration to Python 3 for several Flask applications, including introduction of new Unit Tests.
+        \item Constructed and debugged unit and integration tests for Flask applications using Capybara and Selenium.
         \item Refactored MySql and SqlLite queries in Python 3, allowing for significant increases in efficiency and testing potential.
-
+        \item Proposed, tested, and implemented new features for web applications in Flask, using a full stack including Python backend with Jinja2 templating engine, and Javascript/HTML frontend.
+              
     \end{itemize}
     
     \section{PROJECT EXPERIENCE}
     
     \begin{itemize}[label={}]  \itemsep -2pt %reduce space between items
-        \item \textbf{Java, Android Studio, Gradle}
-              Two years of developing Android applications for robotics, including experience tethering devices with bluetooth to transfer data.
-              Used Java to develop system of three android apps that a robotics team of 60 people rely on every year to record data.
-        \item \textbf{C\texttt{\#}, Transact-SQL, PowerQuery}
-        Worked on an volunteer basis to create an entire software stack for Bountiful Harvest Food Pantry. Two desktop applications developed in C\texttt{\#},
-         connecting to a remote Microsoft SQL Server. Engineered reporting system using Microsoft Excel and PowerQuery (M), and generated complex reports according
-          to Federal standards.
+        \item \textbf{C\texttt{\#}, SQL}
+              Worked on an volunteer basis to create an entire software stack for Bountiful Harvest Food Pantry. Two desktop applications developed in C\texttt{\#},
+              connecting to a remote SQL Server. Engineered reporting system using Microsoft Excel, and generated complex reports according
+              to Federal standards.
     \end{itemize}
     
-    \section{COMPUTER SKILLS}
-    \bigskip
-    \begin{parcolumns}[rulebetween,colwidths={5=2cm,1=2cm}]{6}
-        \colchunk[1]{\textbf{Languages}\\C/C\texttt{++}\\C\texttt{\#}\\Java\\Python\\Javascript\\Typescript}
-        \colchunk[2]{\\Razor\\PHP\\HTML/CSS\\SQL\\PowerQuery (M)}
-        \colchunk[3]{\textbf{IDEs}\\Visual Studio\\Visual Studio Code\\IntelliJ\\Eclipse\\Vim\\DataGrip}
-        \colchunk[4]{\textbf{Technologies}\\Git\\.NET Core\\ASP.NET\\React\\SSH\\Azure Devops}
-        \colchunk[5]{\\Firebase\\Flask\\Bash\\WinForms\\LINQ\\Android}
-        \colchunk[6]{\\AWS\\Azure Cloud\\Bootstrap\\JQuery\\Entity Framework\\AngularJS}
-    \end{parcolumns}
+    \section{SKILLS}
+    \vspace{1mm}
+    \small{
+        \textbf{Programming Languages:} C/C++, Java, Python, Javascript, Typescript, HTML/CSS, SQL, PHP \\
+        \textbf{Developer Tools:} Visual Studio, Visual Studio Code, Vim, Git, Docker, Eclipse, Azure Devops \\
+        \textbf{Frameworks and Technologies:} .NET, React, Entity Framework, ASP.NET, AWS, Azure Cloud
+    }
     
 \end{resume}
 \end{document}
